@@ -2,11 +2,6 @@
   publish = "public"
   command = "hugo"
 
-[build.environment]
-  HUGO_THEME = "archie"
-  HUGO_THEMESDIR = "/opt/build"
-  HUGO_VERSION = "0.75.1"
-
 [context.production.environment]
   HUGO_BASEURL = "https://jaymutuku.netlify.app/"
   HUGO_ENV = "production"

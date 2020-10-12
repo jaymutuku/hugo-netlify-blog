@@ -27,8 +27,8 @@ $ Makefile
 Navigate to `http://localhost:1313`
 
 ### Credits
-[Hugo Team](https://gohugo.io/)
-[Archie Theme](https://github.com/athul/archie)
+* [Hugo Team](https://gohugo.io/)
+* [Archie Theme](https://github.com/athul/archie)
 
 ## TODO
 -
