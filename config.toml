@@ -1,0 +1,46 @@
+baseURL = "http://localhost:1313"
+languageCode = "en-us"
+title = "100-pieces"
+
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+[params]
+	mode="dark" #auto
+	featherIconsCDN=true
+	subtitle = "Minimal and Clean Blog"
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/jaymutuku"
+
+[[params.social]]
+name = "Linkedin"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/josphat-mutuku-9222ba32/"
+
+[[params.social]]
+name = "Mail"
+icon = "mail"
+cmd = "mailto:mutuku.josphat@gmail.com"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
