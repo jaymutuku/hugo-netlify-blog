@@ -6,26 +6,27 @@ description: a work around on tex live installation
 draft: false
 ---
 
-### Installing Tex Live Full in Arch Linux
-
 You may encounter the following issues when installing text live full [from here](https://aur.archlinux.org/packages/texlive-full/)
 
 and setting it up to work with `TextStudio`
-```
+
+```shell
 # pacman -S texstudio
 ```
 
 #### Error 1: No such file or directory
 
 This error is shown when you run these series of command
-```
+
+```shell
+
 # git clone https://aur.archlinux.org/texlive-full.git
 
 # cd texlive-full
 
 # makepkg -sri
 ```
-```
+```shell
 WARNING: Using existing $srcdir/ tree
 ==> Entering fakeroot environment...
 ==> Starting package()...
@@ -44,13 +45,13 @@ You obtain this date from the downloaded directory path `texlive-full/src/instal
 
 Set Path to Tex Binaries permanently, in `.profile` file
 
-```
+```shell
 export PATH="/opt/texlive/2020/bin/x86_64-linux:$PATH"
 ```
 
 or else you can create this file ` texlive-full.sh ` in `/etc/profile.d/` before you begin installation as shown in error 1 above
 
-```
+```shell
 _year=2020
 [ -d /opt/texlive/${_year}/bin/x86_64-linux ] && export PATH=$PATH:/opt/texlive/${_year}/bin/x86_64-linux
 [ -d /opt/texlive/${_year}/texmf-dist/doc/man ] && export MANPATH=:$MANPATH:/opt/texlive/${_year}/texmf-dist/doc/man
@@ -68,7 +69,8 @@ or after login `$ tex --version` should show you the tex version verbose.
 
 If you run this series of commands to  make the directory where you`.tex` files reside writable.
 As in
-```
+
+```shell
 # su
 # Password:
 # chmod 0777 -R resume-cover-letter/

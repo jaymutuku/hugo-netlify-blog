@@ -5,7 +5,6 @@ tags: [troubleshooting,arch]
 description: how to fix a crushing Light Display Greeter
 draft: false
 ---
-### Fixing a crushing Light Display Greeter other than the service
 
 Boot from Live USB
 

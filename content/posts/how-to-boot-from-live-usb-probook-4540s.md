@@ -6,7 +6,6 @@ description: how to fix the issue on booting from live USB
 draft: false
 ---
 
-### Booting from Live USB Probook 4540s Hp Laptop
 
 #### Issue:Unable to boot from live USB
 
