@@ -160,10 +160,16 @@ Pacstrap!
 
 #### 7.1 Mount partitions so that you can install software on them.
 
+1. create mount dir
+2. create new file system
+3. label drive
+4. mount drive
+
 **make boot EFI System directory,create a filesystem for it & mount it to its respective partition**
 ```
 $ mkdir -p /mnt/boot/efi
 $ mkfs.fat -F32 /dev/sda1
+$ e2label /dev/sda1 Boot
 $ mount /dev/sda1 /mnt/boot/efi
 ```
 
@@ -171,6 +177,7 @@ $ mount /dev/sda1 /mnt/boot/efi
 ```
 $ mkdir -p /mnt/var
 $ mkfs.ext4 /dev/sda2
+$ e2label /dev/sda2 var
 $ mount /dev/sda2 /mnt/var
 ```
 
@@ -186,6 +193,7 @@ $ mount /dev/sda3 /mnt
 ```
 $ mkdir -p /mnt/home
 $ mkfs.ext4 /dev/sda4
+$ e2label /dev/sda4 arch-home
 $ mount /dev/sda4 /mnt/home
 ```
 **make swap and turn it on**
@@ -296,6 +304,11 @@ create a password for your user
 ```
 Enter the password again when prompted again.
 
+To delete a user
+```
+$ userdel <username>
+```
+
 ### 9.5 Edit file /etc/hosts
 
 ```
@@ -359,13 +372,18 @@ I will populate this file with those for Kenya and South Africa, in that order.
 Server = http://archlinux.mirror.liquidtelecom.com/$repo/os/$arch
 Server = https://archlinux.mirror.liquidtelecom.com/$repo/os/$arch
 
-## South Africa
+## South Africa - 3074 km
 Server = http://archlinux.za.mirror.allworldit.com/archlinux/$repo/os/$arch
 Server = https://archlinux.za.mirror.allworldit.com/archlinux/$repo/os/$arch
 Server = http://za.mirror.archlinux-br.org/$repo/os/$arch
 Server = http://mirror.is.co.za/mirror/archlinux.org/$repo/os/$arch
 Server = http://mirrors.urbanwave.co.za/archlinux/$repo/os/$arch
 Server = https://mirrors.urbanwave.co.za/archlinux/$repo/os/$arch
+
+## Israel - 3469 km
+Server = http://mirror.isoc.org.il/pub/archlinux/$repo/os/$arch
+Server = https://archlinux.mivzam.net/$repo/os/$arch
+
 ```
 ### 9.9 Install GRUB bootloader for UEFI system
 ```

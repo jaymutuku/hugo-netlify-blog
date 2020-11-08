@@ -14,6 +14,7 @@ I didn't want to repeat some sections well explained in the [UEFI Process]({{<re
 You can refer there and follow due process.
 
 Namely;
+
 - Connecting to WiFi.
 - Installing Base System(pacstrap).
 - Setting Timezone & Language.
@@ -90,6 +91,7 @@ For most part of the installation procedure use the UEFI one but switch immediat
 ```
 $ mkdir -p /mnt/boot
 $ mkfs.ex4 /dev/sda1
+$ e2label /dev/sda1 Boot
 $ mount /dev/sda1 /mnt/boot
 ```
 
@@ -122,6 +124,7 @@ $ mount /dev/sda2 /mnt
 ```
 $ mkdir -p /mnt/home
 $ mkfs.ext4 /dev/sda3
+$ e2label /dev/sda3 home
 $ mount /dev/sda /mnt/home
 ```
 
@@ -129,6 +132,7 @@ $ mount /dev/sda /mnt/home
 ```
 $ mkdir -p /mnt/var
 $ mkfs.ext4 /dev/sda4
+$ e2label /dev/sda4 var
 $ mount /dev/sda4 /mnt/var
 ```
 

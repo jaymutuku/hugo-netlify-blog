@@ -69,21 +69,21 @@ $ fdisk /dev/sda
 ```
 where /dev/sda/ is the disk we are partitioning. 
 
- ### Partition Scheme for 4540s (Legacy System)
- This will be a single boot (Arch Linux).
- The partition is to be observed in the order shown
- Disk Size - 500 GB
+### Partition Scheme for 4540s (Legacy System)
+This will be a single boot (Arch Linux).
+The partition is to be observed in the order shown
+Disk Size - 500 GB
 
- Disk Drive - /dev/sda
+Disk Drive - /dev/sda
  
 
- | Device Name | bootable    | Partition Type | Size (GB/MB)| Type                  | Partition Type  |
- |-------------|------------ |----------      |  -----------| -----                 |  ------------   |
- | /dev/sda1   |    *        |/boot           | 550MB       |  primary              |  83 - Linux     |
- | /dev/sda2   |             |/var            | 110GB       |  primary              |  83 - Linux     | 
- | /dev/sda3   |             |/               | 90GB        |  primary              |  83 - Linux     | 
- | /dev/sda4   |             |/home           | 230 GB      |  primary              |  83 - Linux     |
- |             |             |                | 80GB        | Free Space            |                 |
+Device Name | bootable    | Partition Type | Size (GB/MB)| Type                  | Partition Type  |
+|-------------|------------ |----------      |  -----------| -----                 |  ------------   |
+| /dev/sda1   |    *        |/boot           | 550MB       |  primary              |  83 - Linux     |
+| /dev/sda2   |             |/var            | 110GB       |  primary              |  83 - Linux     | 
+| /dev/sda3   |             |/               | 90GB        |  primary              |  83 - Linux     | 
+| /dev/sda4   |             |/home           | 230 GB      |  primary              |  83 - Linux     |
+|             |             |                | 80GB        | Free Space            |                 |
 
  
 Using `cfdisk` make `dev/sda1` bootable.shown by an asterisk. 
@@ -94,12 +94,12 @@ Use partprobe to update partition tables,if you happen to make changes
 ```
 
 
- ### Partition Scheme for 450 G3 (UEFI system)
+### Partition Scheme for 450 G3 (UEFI system)
 
- This will be a dual boot(Arch Linux + Windows).
- The partition is to be observed in the order shown
+This will be a dual boot(Arch Linux + Windows).
+The partition is to be observed in the order shown
 
- Disk Size HDD - 1000 GB = 1TB
+Disk Size HDD - 1000 GB = 1TB
 ```
 fdisk -l
 ```
@@ -112,23 +112,23 @@ fdisk -l
  #parted /dev/sda -s mklabel msdos 
 ```
 
- Disk Drive - /dev/sda  - fdisk /dev/sda
+Disk Drive - /dev/sda  - fdisk /dev/sda
 
- Use t - to change partition type
+Use t - to change partition type
  
 
- | Device Name | Partition Type | Size (GB/MB)| Type                  |                      | Partition Type |
- | :----------:| :--------:     |  :---------:| :-----:               | :-------------:      | :---------:    |
- | /dev/sda1   | /boot          | 250MB       | UEFI System           | 1024 First Sector    |   1            |
- | /dev/sda2   | /var           | 180GB       | Linux Filesystem(ex4) | +120G Last Sector    |   20           |
- | /dev/sda3   | /              | 40GB        | Linux Filesystem(ex4) | +100G Last           |   20           |
- | /dev/sda4   | /home          | 190 GB      | Linux Filesystem(ex4) | +190G Last           |   20           |
- | /dev/sda5   | /swap          | 32 GB       | Linux Swap            | +32G Last Sector     |   19           |
- |             |                | 489 GB      | Free Space(windows)   |                      |                |
+|Device Name | Partition Type | Size (GB/MB)| Type                  |                      | Partition Type |
+| :----------:| :--------:     |  :---------:| :-----:               | :-------------:      | :---------:    |
+| /dev/sda1   | /boot          | 250MB       | UEFI System           | 1024 First Sector    |   1            |
+| /dev/sda2   | /var           | 180GB       | Linux Filesystem(ex4) | +120G Last Sector    |   20           |
+| /dev/sda3   | /              | 40GB        | Linux Filesystem(ex4) | +100G Last           |   20           |
+| /dev/sda4   | /home          | 190 GB      | Linux Filesystem(ex4) | +190G Last           |   20           |
+| /dev/sda5   | /swap          | 32 GB       | Linux Swap            | +32G Last Sector     |   19           |
+|             |                | 489 GB      | Free Space(windows)   |                      |                |
 
                                                                                                 
- /var -  for docker containers
- /swap - 2 * RAM
+/var -  for docker containers
+/swap - 2 * RAM
 
 ### Why this partition scheme?
 - Personal preference - need for speed!
