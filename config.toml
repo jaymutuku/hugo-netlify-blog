@@ -6,7 +6,7 @@ pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 [params]
-	mode="dark" #auto
+	mode="auto" #auto or dark
 	featherIconsCDN=true
 	subtitle = "Minimal and Clean Blog"
 
