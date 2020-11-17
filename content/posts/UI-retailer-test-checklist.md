@@ -1,6 +1,6 @@
 ---
 title: Grey Box UI Testing Checklist
-date: 2020-11-18
+date: 2020-11-17
 tags: [testing,grey-box-testing,manual-UI-testing]
 description: a sample gray box manual UI testing checklist
 draft: false
