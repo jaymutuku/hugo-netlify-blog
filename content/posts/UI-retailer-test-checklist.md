@@ -1,7 +1,7 @@
 ---
 title: Grey Box UI Testing Checklist
 date: 2020-11-18
-tags: [testing,grey-box-testing,checklist,manual-UI-testing]
+tags: [testing,grey-box-testing,manual-UI-testing]
 description: a sample gray box manual UI testing checklist
 draft: false
 ---
@@ -11,7 +11,7 @@ Adding a new retailer,the following steps will be followed:
 
 ##### Test Steps
 
-   1. Load ‘Retailer Add’ form.
+   1. Load 'Retailer Add' form.
    2. Enter the retailer name, say ‘Oleleshao Agrovet’.
    3. Enter retailer description, say ‘this is test retailer detail’.
    4. Enter retailer location, say ‘Melili’.
@@ -71,7 +71,7 @@ To edit or update existing entries, following steps can be followed:
 ##### Test Steps
 
    1. Create a retailer using CREATE functionality.
-   2. Edit different fields of the retailer, say ‘Oleleshao’ to ‘Mrefu Agrovet’.
+   2. Edit different fields of the retailer, say 'Oleleshao' to 'Mrefu Agrovet'.
    3. Submit
 
 ##### Checking the result:
