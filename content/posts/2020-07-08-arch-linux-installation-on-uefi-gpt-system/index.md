@@ -210,12 +210,12 @@ $pacstrap /mnt base base-devel linux-lts linux-firmware nano dialog iw wpa_suppl
 
 ### Step 8: Generate fstab file
 This file has info about your partitions.It picks up partitions that have already been mounted.
-So we expect this file to contain.
+So we expect this file to contain partitions info.
+
 - boot
 - root
 - var
 - home
-partitions info.
 
 So the command to generate fstab file
 ```

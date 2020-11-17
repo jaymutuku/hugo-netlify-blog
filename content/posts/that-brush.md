@@ -5,7 +5,6 @@ tags: [poem]
 description: a poem from an artist about painting
 draft: false
 ---
-### That Brush!
 
 <p>
 When I grab that brush <br>

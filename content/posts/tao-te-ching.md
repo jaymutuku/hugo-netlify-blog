@@ -5,7 +5,7 @@ tags: [poem]
 description: a poem about way of integrity
 draft: false
 ---
-### Tao Te Ching - Book of the Way
+
 <p>
 Stop thinking, and end your problems. <br>
 What is difference between yes and no? <br>

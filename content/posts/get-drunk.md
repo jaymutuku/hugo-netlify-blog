@@ -5,15 +5,14 @@ tags: [poem]
 description: a poem about getting busy
 draft: false
 ---
-
-### Get Drunk
+<p>
 Always be drunk.That's it! <br>
 The great imperative! <br>
 In order not to feel Time's horrid fardel bruise your shoulders,grinding you into the earth,</br>
 Get drunk and stay that way.<br>
 On what?<br>
 On wine,poetry,virtue,whatever. <br>
-
+</p>
 <p>
 But get drunk <br>
 And if you sometimes happen to wake up,on the porches <br>
