@@ -66,8 +66,9 @@ ul > li:before {
   margin-left: -1.1em; 
 }
 
-/* Tables */
+/* Tables  */
 /* https://gist.github.com/andyferra/2554919 */
+
 table {
   padding: 0; }
   table tr {
