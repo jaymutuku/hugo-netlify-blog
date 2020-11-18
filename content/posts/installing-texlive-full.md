@@ -1,7 +1,7 @@
 ---
 title: Installing Tex Live Full in Arch Linux
 date: 2020-11-08
-tags: [troubleshooting,latex,arch]
+tags: [troubleshooting,latex,arch,installation]
 description: a work around on tex live installation
 draft: false
 ---

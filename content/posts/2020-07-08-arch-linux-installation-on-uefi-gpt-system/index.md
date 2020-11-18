@@ -1,7 +1,7 @@
 ---
 title: Arch Linux Installation on UEFI/GPT system
 date: 2020-07-08
-tags: [arch]
+tags: [arch,installation]
 description: Arch installation on UEFI system
 draft: false
 ---

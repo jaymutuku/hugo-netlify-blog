@@ -2,7 +2,7 @@
 title: "How to install postgresql on docker"
 date: 2020-05-13
 description: "Run postgresql as a docker container"
-tags: [postgresql, docker]
+tags: [postgresql, docker,installation]
 draft: false
 
 ---

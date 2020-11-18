@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313"
 languageCode = "en-us"
-title = "100-pieces"
+title = "Pieces & Perspective Blog"
 
 pygmentsstyle = "monokai"
 pygmentscodefences = true
@@ -8,7 +8,7 @@ pygmentscodefencesguesssyntax = true
 [params]
 	mode="auto" #auto or dark
 	featherIconsCDN=true
-	subtitle = "Minimal and Clean Blog"
+	subtitle = "100 Pieces and 10 Perspectives Blog"
 
 [[params.social]]
 name = "GitHub"
@@ -23,7 +23,7 @@ url = "https://www.linkedin.com/in/josphat-mutuku-9222ba32/"
 [[params.social]]
 name = "Mail"
 icon = "mail"
-cmd = "mailto:mutuku.josphat@gmail.com"
+url = "mailto:mutuku.josphat@gmail.com"
 
 [[menu.main]]
 name = "Home"

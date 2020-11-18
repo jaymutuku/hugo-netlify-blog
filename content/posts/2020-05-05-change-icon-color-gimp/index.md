@@ -6,13 +6,9 @@ tags: [gimp]
 draft: false
 ---
 
-The theme of this blog is black and white.So I wanted all images and icons appearing here to match as well.
+A while ago I wanted to change colored images and icons to black - white using `gimp`.
 
-Some of the images(most of them) like the preview image here and also the `gimp` black and white were easier to find online.
-The challenge here was for the ones I couldn't find!So I figured out an easier way around this.Of course using gimp.
-Free and easier to use image editing software.
-
-Am using fedora,operating system.Since it comes with fedora distribution.The installation is as easy as:
+I was using fedora(operating system).Since it comes with fedora distribution.The installation is as easy as:
 
 ```
 $ sudo dnf install gimp

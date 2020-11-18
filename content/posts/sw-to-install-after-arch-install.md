@@ -1,7 +1,7 @@
 ---
 title: Configure cinnamon desktop with nemo in arch system
 date: 2020-11-17
-tags: [arch,installation]
+tags: [arch]
 description: software to install after arch installation
 draft: false
 ---

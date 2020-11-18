@@ -12,6 +12,7 @@ I lose control of the world around me; <br>
 with a clear uninterrupted mind <br>
 I go on a spiritual journey. <br>
 </p>
+
 <p>
 I merge into the subconscious <br>
 In pursuit of self realisation <br>
@@ -34,4 +35,5 @@ washing from the successful encounter that profound ego to create <br>
 Emanating from the very essence of my existence reincarnates another hidden soul <br>
 through that brush! <br>
 </p>
+
 - Samson Ssenkaaba(Uganda)

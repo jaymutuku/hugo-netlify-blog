@@ -21,7 +21,7 @@ $ sudo pacman -S glibc
 
 - Build site
 ```
-$ Makefile
+$ make start
 ```
 - View site
 Navigate to `http://localhost:1313`

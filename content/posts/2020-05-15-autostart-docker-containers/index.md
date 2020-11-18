@@ -1,7 +1,7 @@
 ---
 title: How to automatically start docker containers
 date: 2020-05-13
-tags: [docker, code]
+tags: [docker]
 description: Autostart some docker containers on system boot
 draft: false
 ---
