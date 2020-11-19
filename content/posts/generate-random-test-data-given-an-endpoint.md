@@ -1,15 +1,21 @@
 ---
-title: Postman API  Testing
-date: 2020-11-18
-tags: [api-testing,postman,testing,automation,scripts,gists]
-description: a sample postman api test
+title: Random Test Data Generation
+date: 2020-11-19
+tags: [python,testing,test-automation,test-data,test-scripts,gists]
+description: a sample test data generation python script
 draft: false
 ---
 
-### Example Postman Tests
+### Example: 
 
-{{< gist jaymutuku 0e0bbb7e4702aa4f1d59bc25ed9e378a >}}
+{{< gist jaymutuku 1dc496a00ea484783404711833443846 >}}
 
 ### Notes
 
-[Here](https://github.com/jaymutuku/postman-api-tests) is the detailed explanation of above script. 
+The above script generates random kenya msisdn for user,firstname,lastname and age.
+Then places a random farm inputs order for the given user(farmer)
+
+### Bonus
+The gist for searching the created users given there msisdn in csv can be found here
+
+- https://gist.github.com/jaymutuku/ef48ed0d6850db2fb77ce8a60595c5c6
