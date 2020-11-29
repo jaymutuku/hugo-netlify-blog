@@ -1,7 +1,7 @@
 ---
 title: Test Defect Management Procedure
 date: 2020-11-17
-tags: [testing,test-defect]
+tags: [testing,test-defect,plantuml]
 description: a sample test defect management procedure
 draft: false
 ---
@@ -134,8 +134,27 @@ compliant with industry best practices and conventions.
     fixed, the status is changed to “open” and sent back to the developer.
 
     **FLOWCHART 1: A SIMPLIFIED BUG CYLCE.**
-![Simplified Bug Cycle](./pic1.png)
-![Simplified Bug Cycle Glossary](./pic2.png)    
+
+{{<gravizo "Simple Bug Cyle">}}
+@startuml
+while(Bug reported by Tester)
+- NEW;
+endwhile
+while(Project Lead or Test Lead defines the status & Assigns to the developer);
+- ASSIGNED;
+- Developer will fix it & update the defect status;
+- FIXED;
+endwhile
+while(Tester will verify it & change the status) is (Verified  & Not Fixed)
+- Verified & Fixed,Verified & Not -Fixed,Closed;
+- Change the Status and reassign;
+endwhile
+- REOPEN;
+- Both the team will decide the future of the defect;
+- Invalid,Rejected,Deferred,Duplicate,Non-Recreatable;
+@enduml
+
+{{</gravizo>}}
 
 1.  New Bugs and enhancements are submitted in the Defect tracking system(HP
     Quality Center) account by the QA.

@@ -1,7 +1,7 @@
 ---
 title: Test Report
 date: 2020-11-20
-tags: [testing,test-doc,test-report]
+tags: [testing,test-docs,test-report]
 description: a sample rest report
 draft: false
 ---
