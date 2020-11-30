@@ -48,12 +48,12 @@ $ systemctl enable iwd.service
 ```
 
 **Start the service**
-```
+```shell
 $ systemctl start iwd.service
 ```
 
 **Verify it has started**
-```
+```shell
 $ systemctl status iwd.service
 ```
 
@@ -65,7 +65,7 @@ The prompt will be displayed as `[iwd]#`.Here you are interacting with the clien
 **3.1 Get you device name**
 
 list all wifi devices nearby
-```
+```shell
 [iwd]# device list
 ```
 
@@ -80,7 +80,7 @@ wlan0          b8:81:98:75:b6:79    on        phy0    station
 Note: wireless devices usually start with letter 'w'. e.g `wlan0` or `wlp3s0`
 
 **3.2 List all available networks**
-```
+```shell
 [iwd]# station wlan0 get-networks
 ```
 ```
@@ -117,7 +117,7 @@ You should see see response different from the one stated in step 2.
 
 To use `iwctl` directly without entering into the prompt
 
-```
+```shell
 root@archiso ~#iwctl --passphrase <your_network_password> station <your_interface> connect <your_network_name>
 
 e.g
@@ -128,7 +128,7 @@ root@archiso ~#iwctl --passphrase m455fgfH station wlan0 connect the_guy_next_do
 ### Step 4: Check that you have booted in the correct mode.
 Am assuming you are in UEFI  mode, not legacy mode.Because commands are quite difference for both modes.
 You can type
-```
+```shell
 $ls /sys/firmware/efi/efivars
 ```
 If the above commands displays output,then you are in UEFI mode.Clear the screen `Ctrl + l`.
@@ -137,7 +137,7 @@ Otherwise if it displays `ls:cannot access 'sys/firmware/efi/vars':No such file 
 then you have legacy system
 
 Otherwise you can execute the following command to verify
-```
+```bash
 # [ -d /sys/firmware/efi/efivars ] && echo "UEFI" || echo "Legacy"
 
 ```
@@ -145,7 +145,7 @@ Otherwise you can execute the following command to verify
 Then you can refer to the [Installation for Legacy/BIOS/MBR Legacy system process]({{<relref "2020-07-08-arch-linux-installation-on-bios-mbr-system/index.md">}}) 
 
 ### Step 5: Check clock is set correctly
-```
+```shell
 $ timedatectl set-ntp true
 ```
 
@@ -166,7 +166,7 @@ Pacstrap!
 4. mount drive
 
 **make boot EFI System directory,create a filesystem for it & mount it to its respective partition**
-```
+```shell
 $ mkdir -p /mnt/boot/efi
 $ mkfs.fat -F32 /dev/sda1
 $ e2label /dev/sda1 Boot
@@ -174,7 +174,7 @@ $ mount /dev/sda1 /mnt/boot/efi
 ```
 
 **make var directory & mount it to its respective partition**
-```
+```shell
 $ mkdir -p /mnt/var
 $ mkfs.ext4 /dev/sda2
 $ e2label /dev/sda2 var
@@ -182,7 +182,7 @@ $ mount /dev/sda2 /mnt/var
 ```
 
 **create a filesystem & mount it to its root partition**
-```
+```shell
 $ mkfs.ex4 /dev/sda3
 $ mount /dev/sda3 /mnt
 ```
@@ -190,14 +190,14 @@ $ mount /dev/sda3 /mnt
 
 
 **make home directory & mount it to its respective partition**
-```
+```shell
 $ mkdir -p /mnt/home
 $ mkfs.ext4 /dev/sda4
 $ e2label /dev/sda4 arch-home
 $ mount /dev/sda4 /mnt/home
 ```
 **make swap and turn it on**
-```
+```bash
 $ mkswap /dev/sda5
 $ swapon /dev/sda5
 ```
@@ -362,7 +362,7 @@ So here we go
 
 I will populate this file with those for Kenya and South Africa, in that order.
 
-```
+```shell
 ##
 ## Arch Linux repository mirrorlist
 ## Generated on 2020-06-26
@@ -402,7 +402,7 @@ Server = https://archlinux.mivzam.net/$repo/os/$arch
 ```
 
 ### 9.12 Install various important packages
-```
+```shell
 # pacman -S xorg xorg-apps xorg-server xorg-drivers xrandr terminator mesa linux-headers xdg-user-dirs fuse2 ntfs-3g exfat-utils pulseaudio pulseaudio-bluetooth bluez-utils pavucontrol  gvfs dkms haveged git unrar unzip htop feh lsb-release  firefox lightdm lightdm-gtk-greeter  
 ``` 
 

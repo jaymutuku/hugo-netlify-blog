@@ -50,7 +50,7 @@ $ sudo gedit docker-compose-familyDB.service
 ```
 Then paste the following content and save the file.
 
-```
+```shell
 # /etc/systemd/system/docker-compose-familyDB.service
 
 [Unit]
@@ -74,7 +74,7 @@ Check that the `WorkingDirectory` path is pointing to the location of your `dock
 On our `docker-compose.yml` file, in the previous post, add the line `restart: always` meaning our container 
 restarts only when Docker daemon restarts.Here is how our file now looks like.
 
-```
+```bash
 version: "3.3"
 services:
   database:

@@ -171,7 +171,7 @@ In this module, you will learn to install Ansible and configure Ansible roles. Y
 - Executing adhoc commands
 
 ### 10. Containerization using Kubernetes
-**Learning Objective: **
+**Learning Objective:**
 In this module, you will learn the basics of Kubernetes and its integration with Docker. 
 
 **Topics:**

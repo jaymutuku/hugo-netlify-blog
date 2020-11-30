@@ -66,33 +66,43 @@ ul > li:before {
   margin-left: -1.1em; 
 }
 
-/* Tables  */
-/* https://gist.github.com/andyferra/2554919 */
+/* table */
 
 table {
-  padding: 0; }
-  table tr {
-    /* border-top: 1px solid #cccccc; */
-    background-color: white;
-    margin: 0;
-    padding: 0; }
-    table tr:nth-child(2n) {
-      background-color: #f8f8f8; }
-    table tr th {
-      font-weight: bold;
-      /* border: 1px solid #cccccc; */
-      text-align: left;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr td {
-      border: 1px solid #cccccc;
-      text-align: left;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr th :first-child, table tr td :first-child {
-      margin-top: 0; }
-    table tr th :last-child, table tr td :last-child {
-      margin-bottom: 0; }
+    width: 100%;
+	border-top: 1px solid #919699;
+	border-left: 1px solid #919699;
+	border-spacing: 0;
+}
+	
+table th {
+	padding: 4px 8px 4px 8px;
+	background: #E2E2E2;
+	font-size: 12px;
+	border-bottom: 1px solid #919699;
+	border-right: 1px solid #919699;
+}
+table th p {
+	font-weight: bold;
+	margin-bottom: 0px; 
+}
+	
+table td {
+	padding: 8px;
+	font-size: 12px;
+	vertical-align: top;
+	border-bottom: 1px solid #919699;
+	border-right: 1px solid #919699;
+}
+table td p {
+	margin-bottom: 0px; 
+}
+table td p + p  {
+	margin-top: 5px; 
+}
+table td p + p + p {
+	margin-top: 5px; 
+}
 
 /* Images */
 img {
@@ -274,7 +284,7 @@ svg{
   top: 0;
 }
 
-.highlight pre code[class=language-javaScript]::before,
+.highlight pre code[class="language-javascript"]::before,
 .highlight pre code[class="language-js"]::before {
 content: "js";
 background: #f7df1e;
@@ -320,3 +330,48 @@ content: 'Markdown';
 background: royalblue;
 color: whitesmoke ;
 }
+
+.highlight pre code[class*='language-html']::before{
+content: 'html';
+background: '#e34c26';
+color: orange;
+}
+
+.highlight pre code[class*='language-cpp']::before{
+content: 'cpp';
+background: red;
+color: grey;
+}
+
+.highlight pre code[class*='language-sql']::before{
+content: 'sql';
+background: #B22222;
+color: white;
+}
+
+.highlight pre code[class*='language-yml']::before{
+content: 'yml';
+background: #efbb35;
+color: tuliptree;
+}
+
+.highlight pre code[class*='language-puml']::before{
+content: 'puml';
+background: #808000;
+color: olive;
+}
+
+.highlight pre code[class*='language-tex']::before{
+content: 'tex';
+background: #8B4513;
+color: coppercanyon;
+}
+
+
+
+
+
+
+
+
+
