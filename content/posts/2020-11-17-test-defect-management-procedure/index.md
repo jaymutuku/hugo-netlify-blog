@@ -156,7 +156,7 @@ endwhile
 
 {{</gravizo>}}
 
-![Bug Cycle](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jaymutuku/hugo-netlify-blog/posts/2020-11-17-test-defect-management-procedure/bugcycle.puml)
+![Bug Cycle](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jaymutuku/hugo-netlify-blog/main/content/posts/2020-11-17-test-defect-management-procedure/bugcycle.puml)
 
 
 1.  New Bugs and enhancements are submitted in the Defect tracking system(HP
