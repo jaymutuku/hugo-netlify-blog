@@ -1,0 +1,27 @@
+{{ $urlPre := "https://reqres.in" }}
+{{ $users := getJSON $urlPre "/api/users" }}
+
+
+<table>
+	<thead>
+		<tr>
+			<th>User ID</th>			
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Email</th>
+			<th>Avatar</th>
+		</tr>
+	</thead>
+	<tbody> 
+		{{ range $users.data }}   
+		<tr>
+			<td>{{ .id }}</td>			
+			<td>{{ .first_name }}</td>
+			<td>{{ .last_name }}</td>
+			<td>{{ .email }}</td>
+			<td><a href="{{ .avatar }}" target="_blank">{{ .avatar }}</a></td>
+    </tr>
+    {{ end }}
+	</tbody>
+</table>
+

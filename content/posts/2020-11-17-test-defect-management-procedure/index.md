@@ -137,24 +137,20 @@ compliant with industry best practices and conventions.
 
 {{<gravizo "Simple Bug Cyle">}}
 @startuml
-while(Bug reported by Tester)
-- NEW;
-endwhile
-while(Project Lead or Test Lead defines the status & Assigns to the developer);
-- ASSIGNED;
-- Developer will fix it & update the defect status;
-- FIXED;
-endwhile
-while(Tester will verify it & change the status) is (Verified  & Not Fixed)
-- Verified & Fixed,Verified & Not -Fixed,Closed;
-- Change the Status and reassign;
-endwhile
-- REOPEN;
-- Both the team will decide the future of the defect;
-- Invalid,Rejected,Deferred,Duplicate,Non-Recreatable;
+Bob -> Alice : hello
 @enduml
 
 {{</gravizo>}}
+
+
+{{<plantuml "Bug Cyle">}}
+@startuml
+Bob -> Alice : hello
+@enduml
+
+{{</plantuml>}}
+
+![Other](http://www.plantuml.com/plantuml/png/encoded=)
 
 ![Bug Cycle](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jaymutuku/hugo-netlify-blog/main/content/posts/2020-11-17-test-defect-management-procedure/bugcycle.puml)
 
