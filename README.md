@@ -19,9 +19,17 @@ $ sudo pacman -S glibc
 
 - Clone repo.
 
+- Build site + drafts
+```
+$ make build_all
+``` 
 - Build site
 ```
-$ make start
+$ make build
+```
+- Clear Cache
+```
+$ make clean
 ```
 - View site
 Navigate to `http://localhost:1313`
