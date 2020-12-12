@@ -1,27 +1,27 @@
 [build]
   publish = "public"
-  command = "hugo"
+  command = "hugo --gc --minify"
 
-[context.production.environment]
-  HUGO_BASEURL = "https://jaymutuku.netlify.app/"
+[context.production.environment] 
+  HUGO_VERSION = "0.79.1"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
 
+[context.split1]
+command = "hugo --gc --minify --enableGitInfo"
+
+[context.split1.environment]
+HUGO_VERSION = "0.79.1"
+HUGO_ENV = "production"  
+
 [context.deploy-preview]
-command = "hugo --gc -b $DEPLOY_PRIME_URL"  
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-   HUGO_VERSION = "0.75.1"
+HUGO_VERSION = "0.79.1"
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Cache-Control = "public, max-age=600"
-
-[[headers]]
-  for = "*.(css|js|woff|woff2|ttf|png|jpg|jpeg)"
-  [headers.values]
-    Cache-Control = "public, max-age=2592000"
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
 
 [[redirects]]
   from = "/*"

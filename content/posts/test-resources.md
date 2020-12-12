@@ -8,15 +8,15 @@ draft: false
 
 ### Test Resources
 
-|ID    | Description                                   | Link                          |  
-|------|-----------------------------------------------|-------------------------------|
-| TR1  | A simple HTTP Request & Response Service      | https://httpbin.org         |
-| TR2  | Reliable Exchange Rates & Currency Conversion Real-time JSON API   | https://currencylayer.com/  |
-| TR3  | Global Phone Number Validation & Lookup JSON API   | https://numverify.com/   |
-| TR4  | Online REST API for testing and prototyping    | https://fastapi.tiangolo.com/   |
-| TR5  | Online REST API for testing and prototyping    | https://dummy.restapiexample.com  |
-| TR6  | Online REST API for testing and prototyping    | https://jsonplaceholder.typicode.com   |
-| TR7  | Online REST API for testing and prototyping    | https://api.zippopotam.us   |
+|ID    | Description                                                        | Link                          |  
+|------|--------------------------------------------------------------------|-------------------------------|
+| TR1  | A simple HTTP Request & Response Service                           | https://httpbin.org           |
+| TR2  | Reliable Exchange Rates & Currency Conversion Real-time JSON API   | https://currencylayer.com/    |
+| TR3  | Global Phone Number Validation & Lookup JSON API                   | https://numverify.com/        |
+| TR4  | Online REST API for testing and prototyping                        | https://fastapi.tiangolo.com/ |
+| TR5  | Online REST API for testing and prototyping                        | https://dummy.restapiexample.com  |
+| TR6  | Online REST API for testing and prototyping                        | https://jsonplaceholder.typicode.com   |
+| TR7  | Online REST API for testing and prototyping                        | https://api.zippopotam.us   |
 
 
 ### Design Resource
