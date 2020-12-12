@@ -135,23 +135,6 @@ compliant with industry best practices and conventions.
 
     **FLOWCHART 1: A SIMPLIFIED BUG CYLCE.**
 
-{{<gravizo "Simple Bug Cyle">}}
-@startuml
-Bob -> Alice : hello
-@enduml
-
-{{</gravizo>}}
-
-
-{{<plantuml "Bug Cyle">}}
-@startuml
-Bob -> Alice : hello
-@enduml
-
-{{</plantuml>}}
-
-![Other](http://www.plantuml.com/plantuml/png/encoded=)
-
 ![Bug Cycle](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jaymutuku/hugo-netlify-blog/main/content/posts/2020-11-17-test-defect-management-procedure/bugcycle.puml)
 
 

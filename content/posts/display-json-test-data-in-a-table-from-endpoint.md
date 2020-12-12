@@ -9,14 +9,14 @@ draft: false
 ### Online REST API testing and prototyping resource
 - http://reqres.in
 
-
-### The Endpoint
+ 
+### The URL Scheme
 - http://reqres.in/api/users
 
 
 ### Response Displayed in a Table
 
-{{<usersJSON>}}
+{{<usersJSON url="https://reqres.in" scheme="/api/users">}}
 
 ### Create a Hugo ShortCode
 `layout/shortcodes/usersJSON.html`
@@ -54,7 +54,7 @@ Now to call the shortcode in the markdown file
 `users-test-data.md`
 
 ```md
-{{/*%<usersJSON>%*/}}
+{{/*%<usersJSON url="https://reqres.in" scheme="/api/users">%*/}}
 ```
 Just note that the above is commented to avoid been processed as shortcode.
 
@@ -120,7 +120,13 @@ Just note that the above is commented to avoid been processed as shortcode.
 - https://api.zippopotam.us
 - https://jsonplaceholder.typicode.com
 - https://dummy.restapiexample.com
+- https://fastapi.tiangolo.com/
 
+### Global Phone Number Validation & Lookup JSON API
+- https://numverify.com/
+
+### Reliable Exchange Rates & Currency Conversion Real-time JSON API
+- https://currencylayer.com/
 
 
 

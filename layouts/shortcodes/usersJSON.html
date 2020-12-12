@@ -1,6 +1,5 @@
-{{ $urlPre := "https://reqres.in" }}
-{{ $users := getJSON $urlPre "/api/users" }}
-
+{{ $url := "https://reqres.in" }}
+{{ $scheme := getJSON $url "/api/users" }}
 
 <table>
 	<thead>
@@ -13,7 +12,7 @@
 		</tr>
 	</thead>
 	<tbody> 
-		{{ range $users.data }}   
+		{{ range $scheme.data }}   
 		<tr>
 			<td>{{ .id }}</td>			
 			<td>{{ .first_name }}</td>

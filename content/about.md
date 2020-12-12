@@ -16,7 +16,8 @@ This is kind of a living documentation, so many posts here will be kept on a con
 
 So with that said, there are still no guarantees but incase you need to contact me, my email is mutuku "dot" josphat "at" gmail "dot" com.
 
-Have a look at my [resume](https://jaymutuku.github.io) for more about me and [projects](https://github.com/jaymutuku) have worked on.           
+Have a look at my [resume](https://jaymutuku.github.io) for more about me and [projects](https://github.com/jaymutuku) have worked on.
+
             
 
 
