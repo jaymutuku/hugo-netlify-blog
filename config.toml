@@ -8,7 +8,7 @@ pygmentscodefencesguesssyntax = true
 [params]
 	mode="auto" #auto or dark
 	featherIconsCDN=true
-	subtitle = "100 Pieces and 10 Perspectives Blog"
+	subtitle = "Pieces and Perspectives Blog"
 
 [[params.social]]
 name = "GitHub"

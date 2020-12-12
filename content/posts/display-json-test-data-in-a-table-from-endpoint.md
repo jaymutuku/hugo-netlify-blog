@@ -116,17 +116,6 @@ Just note that the above is commented to avoid been processed as shortcode.
 }
 ```
 
-### Other Online REST API for testing and prototyping 
-- https://api.zippopotam.us
-- https://jsonplaceholder.typicode.com
-- https://dummy.restapiexample.com
-- https://fastapi.tiangolo.com/
-
-### Global Phone Number Validation & Lookup JSON API
-- https://numverify.com/
-
-### Reliable Exchange Rates & Currency Conversion Real-time JSON API
-- https://currencylayer.com/
 
 
 
