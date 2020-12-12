@@ -9,7 +9,7 @@ draft: false
 ### Test Resources
 
 |ID    | Description                                   | Link                          |  
-|------|:----------------------------------------------|-------------------------------|
+|------|-----------------------------------------------|-------------------------------|
 | TR1  | A simple HTTP Request & Response Service      | https://httpbin.org         |
 | TR2  | Reliable Exchange Rates & Currency Conversion Real-time JSON API   | https://currencylayer.com/  |
 | TR3  | Global Phone Number Validation & Lookup JSON API   | https://numverify.com/   |
@@ -22,7 +22,7 @@ draft: false
 ### Design Resource
 
 |ID      | Description        | Link                                                              |  
-|--------|:-------------------|:------------------------------------------------------------------|
+|--------|--------------------|-------------------------------------------------------------------|
 | DR1    | Color Combinations | https://www.designwizard.com/blog/design-trends/colour-combination|
 | DR2    | Color Combos       | https://www.colorcombos.com/color-schemes/378/ColorCombo378.html  |
 | DR3    |                    |                                                                   |
