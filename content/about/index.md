@@ -6,7 +6,7 @@ aliases = ["about-us","about","contact"]
 author = "Josphat Mutuku"
 +++
 
-![Me](./josphat.jpeg)
+![Me](./josphat.jpeg#center)
 
 My names are Josphat Mutuku and this blog is my attempt to [learn in public](https://www.swyx.io/writing/learn-in-public/).
 
