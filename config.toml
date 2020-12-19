@@ -2,9 +2,21 @@ baseURL = "http://localhost:1313"
 languageCode = "en-us"
 title = "Pieces & Perspective Blog"
 
-pygmentsstyle = "monokai"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines =  true
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
 [params]
 	mode="auto" #auto or dark
 	featherIconsCDN=true

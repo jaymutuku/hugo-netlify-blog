@@ -6,7 +6,7 @@ description: an example of json flattening script
 draft: false
 ---
 
-Sometimes as a QA Engineer,you need to pull test data from endpoints from 
+Sometimes as a QA Engineer,you need to pull test data from endpoints from
 third parties.That is clients you are integrating you system with.
 
 This is usually vital when the developers are working on the integration.
@@ -24,7 +24,7 @@ import pandas as pd
 from requests.auth import HTTPBasicAuth
 import requests
 import json
-from pandas.io.json import json_normalize 
+from pandas.io.json import json_normalize
 
 # import specific column
 # measure time taken to import big CSV
@@ -35,60 +35,60 @@ token = ''
 
 def get_auth_token(token):
   endpoint='https://test-gateway.tulaa.io/uaa-server/oauth/token'
-  
+
   payload = {
     'username':'<my-email>',
     'password':'<my-password>',
     'grant_type':'password'
-  } 
-  
+  }
+
   response = requests.post(endpoint,auth=HTTPBasicAuth('<web_client>','<client_secret>'),data=payload)
-    
+
   if(response.ok):
-    
+
     jData = json.loads(response.content)
-    
+
     for key in jData:
       if key == 'access_token' in jData:
         token='Bearer'+' '+str(jData[key])
         # print(token)
-        
+
       return token
   else
     # my_logger.debug('a debug message')
-    raise ApiError('Cannot fetch access token:{}'.format(response.status_code))  
-  
+    raise ApiError('Cannot fetch access token:{}'.format(response.status_code))
+
 def get_credit_score(row):
-  
+
   token = get_auth_token(token)
-  
+
   headers ={
-    'Authorization':token    
+    'Authorization':token
   }
-  
+
   try:
     url = 'https://test-cogency-service.tulaa.io/credit/score/str[row]'
-    
+
     response = (requests.get(url).text)
-    response_json = json.loads(response)   
-    
+    response_json = json.loads(response)
+
     return response_json
-    
-    
+
+
   except Exception as e:
     raise e
-  
-  
+
+
   df['API_response'] = df.apply(get_credit_score,axis=1)
   df['API_response'].head()
-  
+
   new_df = json_normalize(df['API_response'])
   new_df = new_df[['metropol_credit_score','id_number']]
   new_df
-  
+
   new_df.to_csv(path_or_buf='./farmers-with-score.csv',index=False)
-  
-  
+
+
 if __name__ == '__main__':
   get_credit_score()
 

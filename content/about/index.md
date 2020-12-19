@@ -5,7 +5,9 @@ date = "2020-05-14"
 aliases = ["about-us","about","contact"]
 author = "Josphat Mutuku"
 +++
-          
+
+![Me](./josphat.jpeg)
+
 My names are Josphat Mutuku and this blog is my attempt to [learn in public](https://www.swyx.io/writing/learn-in-public/).
 
 It serves as an online backup of my diary notes as far as software quality assurance work is concerned.
@@ -18,6 +20,6 @@ So with that said, there are still no guarantees but incase you need to contact 
 
 Have a look at my [resume](https://jaymutuku.github.io) for more about me and [projects](https://github.com/jaymutuku) have worked on.
 
-            
+
 
 

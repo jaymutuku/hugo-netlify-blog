@@ -3,7 +3,7 @@ title: Test Terms
 date: 2020-11-20
 tags: [test-terms,testing,glossary]
 description: a list of 30 test terms with their defination
-draft: false
+draft: true
 
 ---
 

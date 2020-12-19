@@ -11,7 +11,6 @@ draft: false
 ### 1. Overview of DevOps
 #### Learning Objective:
 In this module you will be introduced to the DevOps environment.
-
 #### Topics:
 -   Why DevOps?
 -   What is DevOps?

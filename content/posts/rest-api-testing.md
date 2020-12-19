@@ -1,8 +1,8 @@
 ---
 title: REST API  Testing
 date: 2020-11-19
-tags: [api-testing,python,testing,test-automation,test-scripts,gists]
-description: REST API Test using Python Request Library & Unittest 
+tags: [api-testing, python, testing, test-automation, test-scripts, gists]
+description: REST API Test using Python Request Library & Unittest
 draft: false
 ---
 
@@ -10,14 +10,16 @@ draft: false
 
 {{<gist jaymutuku 499235d0f098dcc97451e9637e7a9080 >}}
 
-
 ### Notes
+
 [Here](https://github.com/jaymutuku/python-api-tests) is the detailed explanation of above script.
 
 ### Sample API Mock Test
+
 Below test script demos the simplest api test using python `unittest` and `request` libraries.
 
-```python
+```python {hl_lines=[11,"13-14"]}
+
 import requests
 import unittest
 from pytest_httpserver import HTTPServer
@@ -26,7 +28,7 @@ import json
 class APITest(unittest.TestCase):
     def test_my_client(self):
         with HTTPServer() as httpserver:
-            # set up the server to serve "/"  with the json
+            # set up the server to serve "/content"  with the json
             httpserver.expect_request('/content').respond_with_json({'result': 30})
             # check that the request is served
             response = requests.get(httpserver.url_for('/content')).json()
@@ -69,5 +71,3 @@ if __name__ == "__main__":
 #FAILED (failures=1)
 #$
 ```
-
-
