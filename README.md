@@ -11,7 +11,7 @@ $ sudo pacman -Syy && sudo pacman -S hugo
 `hugo version`
 
 ```
-$ ldd --version 
+$ ldd --version
 ```
 ```
 $ sudo pacman -S glibc
@@ -22,7 +22,7 @@ $ sudo pacman -S glibc
 - Build site + drafts
 ```
 $ make build_all
-``` 
+```
 - Build site
 ```
 $ make build
