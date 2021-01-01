@@ -6,41 +6,38 @@ description: a poem about way of integrity
 draft: false
 ---
 
-<p>
-Stop thinking, and end your problems. <br>
-What is difference between yes and no? <br>
-What is the difference between success and failure?<br>
-Must you value what others value,<br>
-avoid what others avoid? <br>
-How ridiculous!<br>
-</p>
-<p>
-Other people are excited <br>
-as though they were at a parade <br>
-I alone don't care <br>
-I alone am expressionless <br>
-like an infant before it can smile. <br>
-</p>
-<p>
-Other people have what they need; <br>
-I alone possess nothing <br>
-I alone drift about <br>
-like someone without a home <br>
-I am like an idiot, my mind is so empty. <br>
-</p>
-<p>
-Other people are bright <br>
-I alone am dark <br>
-Other people are sharp;<br>
-I alone am dull, <br>
-Other people have a purpose <br>
-I alone don't know <br>
-I drift like a wave on the ocean <br>
-I bow as aimless as the wind. <br>
-</p>
+```
+Stop thinking, and end your problems. 
+What is difference between yes and no? 
+What is the difference between success and failure?
+Must you value what others value,
+avoid what others avoid? 
+How ridiculous!
 
-<p>
-I am different from ordinary people <br>
-I drink from the Great Mother's breasts. <br>
-</p>
-- Lao Tzu (China)
+Other people are excited 
+as though they were at a parade 
+I alone don't care 
+I alone am expressionless 
+like an infant before it can smile.
+
+Other people have what they need; 
+I alone possess nothing 
+I alone drift about 
+like someone without a home
+I am like an idiot, my mind is so empty.
+
+
+Other people are bright
+I alone am dark 
+Other people are sharp;
+I alone am dull,
+Other people have a purpose
+I alone don't know 
+I drift like a wave on the ocean
+I bow as aimless as the wind.
+
+I am different from ordinary people
+I drink from the Great Mother's breasts.
+
+Lao Tzu (China)
+```
